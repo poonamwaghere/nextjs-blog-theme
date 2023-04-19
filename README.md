@@ -1,137 +1,251 @@
-![Netlify Next.js Blog Template designed by Bejamas](https://user-images.githubusercontent.com/43764894/223762618-62742b4e-9424-44a7-8e85-9f7e4e19db54.png)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website Design</title>
+     <!-- css Files -->
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/3443a4ca80.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <div id="header">
+        <div class="contener">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services ">Services</a> </li>
+                    <li><a href="#porfolio ">Experince</a> </li>
+                    <li><a href="#contact ">Contact</a> </li>
+                    <i class="fas fa-times"  onclick="Closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="Openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphics Designer</p>
+                <h1> Hi, I am <span>Poonam</span><br> Waghere From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------About------------------------------ -->
+    <div id="about">
+        <div class="contener">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/poonam.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To seek the challenging position in Software industry that needs 
+                        innovation, creativity, dedication and enable me to continue to 
+                        work in a challenging and fast paced environment, leveraging 
+                        my current knowledge and fostering creativity with many learning 
+                        opportunities.which provides additional information about my skills. 
+                        If you require any additional information then please contact me</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p> 
+                        </div>
+                    
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                                <li><span>Web Developemnt</span><br>Designinng Website Developer</li>
+                                <li><span>Corel Draw</span><br>Designing Marketing Advertising </li>
+                                <li><span>Graphics Designer</span><br>Designing Layout of web and App<br> Making Pamphlet, Logo, Brochure</li>
+                                <li><span>Marketing</span><br> Digital Marketing Posters</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Afcks Technologies </span><br>Designing Web/App interface</li>
+                                <li><span>Vitthal Multimedia</span><br>Creative associate</li>
+                                <li><span>Vitthal multimedia</span><br>Digital marketing</li>
+                                <li><span>vithal multimedia</span><br>Designing Layout of web and App<br> Making Pamphlet, Logo, Brochure</li>
+                                <li><span>vitthal multimedia</span><br> To create Digtal Marketing Posters</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>B.E (2015)</span><br>Electronic and Telecommunication Engineering</li>
+                                <li><span>Dip(2011)</span><br>Computer Engineering</li>
+                                <li><span>SSC(2008)</span><br>State Board</li>
+
+                                <li><span>Course(2016)</span><br>Advances Excel</li>
+                                <li><span>(2019)</span><br>VBA</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/nextjs-blog-theme)
+    <!-- -----------------------Services--------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Graphics Designer</h2>
+                    <p> Brochures, rack cards & booklets,Business cards, 
+                        letterhead & envelopes,Logos and branded elements,
+                        Posters, banners and signage,
+                        Social media graphics & digital marketing ads,
+                        Email marketing graphics.</p>
+                        <a href="#">Learn More></a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Designer</h2>
+                    <p> Layout of website, Making Poster for web, and adjustment size using photoshop
+                        Social media graphics & digital marketing ads,
+                        Email marketing graphics.</p>
+                        <a href="#">Learn More></a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Digital Marketing</h2>
+                    <p> Available to businesses of all sizes,
+                        Grow your business on and off Marketing
+                        Quick and simple execution.</p>
+                        <a href="#">Learn More></a>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+    <!-- --------------------------------My PortFolio----------------------- -->
+    <div id="porfolio">
+        <div class="contener">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/2.jpg">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>this is the social media Advertising</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/final Purification1.jpg">
+                    <div class="layer">
+                        <h3>Personal Client</h3>
+                        <p>water Purifiation clients</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/New Seperate.jpg">
+                    <div class="layer">
+                        <h3>Personal Client</h3>
+                        <p>water Purifiation clients</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/3.jpg">
+                    <div class="layer">
+                        <h3>Personal Client</h3>
+                        <p>water Purifiation clients</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/4.jpg">
+                    <div class="layer">
+                        <h3>Personal Client</h3>
+                        <p>water Purifiation clients</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/1.jpg">
+                    <div class="layer">
+                        <h3>Personal Client</h3>
+                        <p>water Purifiation clients</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class="btn">See More</a>
+        </div>
+    </div>
+
+<!-- -----------------------Contact------------------------- -->
+
+<div id="contact">
+    <div class="contener">
+        <div class="row">
+            <div class="contact-left">
+
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>  poonamk117@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>  9823119769</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/Curriculum Vitae (POONAM).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            
+            <!-- -------------------------------Form--------------------- -->
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type=" email" name="email" placeholder="Your Email ID" required>
+                    <textarea name="messege"  rows="6" placeholder="Your Messege"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ poonam. made with <i class="fas fa-heart"></i>  by this websites</p>
+    </div>
+</div>
 
 
-A customizable blog starter using:
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-- [Next.js](https://github.com/vercel/next.js) v12
-- [Tailwind](https://tailwindcss.com/) v3.0
-- Built-in [MDX](https://mdxjs.com/) v1 support
-- Includes modern design with dark & light themes
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");    
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab"); 
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
 
-![Preview of blog theme. Author named Jay Doe and blog's name is "Next.js Blog Theme" with one blog post](nextjs-blog-theme-preview.png)
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
 
-[Take a gander at the demo.](https://bejamas-nextjs-blog.netlify.app)
+        function Openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function Closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
 
-[Click here to watch the template walkthrough!](https://www.youtube.com/watch?v=63QZHs259dY)
-
-## Table of Contents:
-
-- [Getting Started](#getting-started)
-  - [Setting Up Locally](#setting-up-locally)
-  - [Using the Wizard](#using-the-setup-wizard)
-- [Configuring the Blog](#configuring-the-blog)
-- [Adding New Posts](#adding-new-posts)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
-
-## Getting Started
-
----
-
-You can get started with this project in two ways: locally or using the [setup wizard](https://nextjs-wizard.netlify.app/).
-
-### Setting Up Locally
-
-If you're doing it locally, start with clicking the [use this template](https://github.com/netlify-templates/nextjs-blog-theme/generate) button on GitHub. This will create a new repository with this template's files on your GitHub account. Once that is done, clone your new repository and navigate to it in your terminal.
-
-From there, you can install the project's dependencies by running:
-
-```shell
-yarn install
-```
-
-Finally, you can run your project locally with:
-
-```shell
-yarn run dev
-```
-
-Open your browser and visit <http://localhost:3000>, your project should be running!
-
-### Using the Setup Wizard
-
-![Preview of Setup Wizard showing the initial page of a setup form](nextjs-setup-wizard.png)
-
-Through the [setup wizard](https://nextjs-wizard.netlify.app/), you can create your blog in a few clicks and deploy to Netlify.
-
-## Configuring the blog
-
-The config is based on environment variables to make it easy to integrate with any Jamstack platform, like Netlify.
-
-Here are the variables you can edit:
-| Variable | Description | Options
-| --- | --- | --- |
-| `BLOG_NAME` | the name of your blog, displayed below the avatar ||
-| `BLOG_TITLE` | the main header (`h1`) on the home page ||
-| `BLOG_FOOTER_TEXT`| the text in the footer ||
-| `BLOG_THEME` | the theme to pass to Tailwind | default |
-| `BLOG_FONT_HEADINGS` | the font-family for all HTML headings, from `h1` to `h6`| sans-serif (default), serif, monospace|
-| `BLOG_FONT_PARAGRAPHS` | the font-family for all other HTML elements | sans-serif (default), serif, monospace|
-
-All of the env variables can be configured through the [Wizard](https://nextjs-wizard.netlify.app/) or through setting the project's environment variables. You can do this in your Netlify dashaboard (Site settings/Build & deploy/Environment/Environment variables).
-
-https://user-images.githubusercontent.com/3611928/153997545-6dcdeef0-e570-49e7-93d6-ce0d393d16c9.mp4
-
-[alt: video walkthrough of editing env vars]
-
-If setting an environment variable isn't your cup of tea, the defaults can be changed in [`utils/global-data.js`](/utils/global-data.js). You can also remove the variables and hard code blog information where these variables are used in the code base.
-
-- `BLOG_THEME, BLOG_FONT_HEADINGS, & BLOG_FONT_PARAGRAPHS` are used in [`tailwind-preset.js`](tailwind-preset.js)
-- `BLOG_NAME, BLOG_TITLE, BLOG_FOOTER_TEXT` are used in [`pages/index.js`](pages/index.js) & [`pages/posts/[slug].js`](pages/posts/[slug].js) through the `globalData` object.
-
-## Adding new posts
-
-All posts are stored in `/posts` directory. To make a new post, create a new file with the [`.mdx` extension](https://mdxjs.com/).
-
-Since the posts are written in `MDX` format you can pass props and components. That means you can use [React components](https://reactjs.org/docs/components-and-props.html) inside your posts to make them more interactive. Learn more about how to do so in the [MDX docs on content](https://mdxjs.com/docs/using-mdx/#components).
-
-https://user-images.githubusercontent.com/3611928/152727802-102ec296-41c8-446d-93ed-922d11187073.mp4
-
-[alt: video walkthrough of adding a new blog post]
-
-## Testing
-
-### Included Default Testing
-
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
-
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
-
-If your team is not interested in this tooling, you can remove them with ease!
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
-
-### Removing Cypress
-
-For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
-
-```diff
-[[plugins]]
-  package = "netlify-plugin-cypress"
--  [plugins.inputs.postBuild]
--    enable = true
--
--  [plugins.inputs]
--    enable = false
-```
-
-If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
-
-```bash
-npm uninstall -D netlify-plugin-cypress
-```
-
-And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
-
-```bash
-npm uninstall cypress
-```
+</body>
+</html>
